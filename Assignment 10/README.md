@@ -5,7 +5,7 @@
 ## Compile
 
 ```
-g++ -g ./main.cpp -o ./main && ./main
+$ g++ -g ./main.cpp -o ./main && ./main
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ g++ -g ./main.cpp -o ./main && ./main
 
 1. int linklist
 
-```
+```c++
 // main function
 Node<int> *list;
 add_element(list, 123);
@@ -34,7 +34,7 @@ print_linked_list(list);
 
 2. float linklist ，避免與 double 衝突，必須括號起來特別指名為 float
 
-```
+```c++
 // main function
 Node<float> *list;
 add_element(list, float(11.11));
@@ -54,7 +54,7 @@ print_linked_list(list);
 
 3. char linklist
 
-```
+```c++
 // main function
 Node<char> *list;
 add_element(list, 'd');
@@ -74,7 +74,7 @@ g -> o -> d -> A
 
 4. string linklist，避免與 char\* 衝突，必須括號起來特別指名為 string
 
-```
+```c++
 // main function
 Node<string> *list;
 add_element(list, string("dog"));
